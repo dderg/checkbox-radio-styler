@@ -1,12 +1,15 @@
 {
   "name": "checkbox-radio-styler",
-  "version": "0.0.0",
+  "version": "1.0.0-beta",
   "homepage": "https://github.com/prog666/checkbox-radio-styler",
   "authors": [
     "Danila Dergachev <gnomdan@yandex.ru>"
   ],
   "description": "es6/commonjs checkbox/radio styling module",
-  "main": "dist/checkbox-radio-styler.js",
+  "main": [
+    "dist/checkbox-radio-styler.js",
+    "dist/checkbox-radio-styler.css"
+  ],
   "keywords": [
     "checkbox",
     "radio",

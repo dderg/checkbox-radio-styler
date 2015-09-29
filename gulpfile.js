@@ -5,6 +5,9 @@ var jshint = require('gulp-jshint');
 var jscs = require('gulp-jscs');
 var stylish = require('gulp-jscs-stylish');
 var uglify = require('gulp-uglify');
+var stylus = require('gulp-stylus');
+var minify = require('gulp-minify-css');
+var autoprefixer = require('gulp-autoprefixer');
 var noop = function () {};
 var connect = require('gulp-connect');
 
@@ -45,9 +48,22 @@ gulp.task('babel', function () {
         .pipe(connect.reload());
 });
 
+gulp.task('stylus', function () {
+    return gulp.src('./src/index.styl')
+        .pipe(stylus())
+        .pipe(autoprefixer())
+        .pipe(rename('checkbox-radio-styler.css'))
+        .pipe(gulp.dest('./dist'))
+        .pipe(minify())
+        .pipe(rename('checkbox-radio-styler.min.css'))
+        .pipe(gulp.dest('./dist'))
+        .pipe(connect.reload({stream: true}));
+});
+
 gulp.task('watch', function () {
     gulp.watch('./examples/*', ['html']);
+    gulp.watch('./src/index.styl', ['stylus']);
     return gulp.watch('./src/index.js', ['babel']);
 });
 
-gulp.task('default', ['connect', 'html', 'babel', 'watch']);
+gulp.task('default', ['connect', 'stylus', 'html', 'babel', 'watch']);

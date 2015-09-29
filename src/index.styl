@@ -1,0 +1,44 @@
+default-color = #333
+.js-styled
+	position relative
+	input
+		position absolute
+		visibility hidden
+		width 0
+		height 0
+		margin 0
+		padding 0
+	span
+		display inline-block
+		height 16px
+		width 16px
+		background white
+		border 1px solid default-color
+		position relative
+	input:checked + span:after
+		content ' '
+		display block
+	&_type
+		&_checkbox
+			input:checked + span:after
+				width 4px
+				height 9px
+				transform rotate(45deg)
+				border-bottom 2px solid default-color
+				border-right 2px solid default-color
+				margin-left 5px
+				margin-top 1px
+		&_radio
+			span
+				border-radius 50%
+			input:checked + span:after
+				width 8px
+				height 8px
+				border-radius 50%
+				position absolute
+				top 0
+				bottom 0
+				left 0
+				right 0
+				margin auto
+				background default-color

@@ -10,3 +10,26 @@
 
 use [browserify](http://browserify.org/) with [babelify extension](https://github.com/babel/babelify) or [gulp version](https://github.com/deepak1556/gulp-browserify)
 
+## Usage
+
+include `checkbox-radio-styler.js` and `checkbox-radio-styler.css`
+
+### init
+
+```javascript
+var styled = new CheckboxRadioStyler('input[type="checkbox"], input[type="radio"]');
+styled.init();
+```
+
+### destroy
+
+```javascript
+styled.destroy();
+```
+
+## todo:
+- check input type
+- test in browsers
+- write some tests
+- test memory usage
+- maybe get rid of "ElementStyler" class
