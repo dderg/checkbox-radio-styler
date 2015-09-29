@@ -25,7 +25,7 @@ class ElementStyler {
     }
 };
 
-export class CheckboxRadioStyler{
+export default class CheckboxRadioStyler{
     constructor (selector) {
         this.selector = selector;
         this.elems = new WeakSet();

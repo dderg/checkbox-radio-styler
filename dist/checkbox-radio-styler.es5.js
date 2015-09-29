@@ -102,5 +102,6 @@ var CheckboxRadioStyler = (function () {
     return CheckboxRadioStyler;
 })();
 
-exports.CheckboxRadioStyler = CheckboxRadioStyler;
+exports['default'] = CheckboxRadioStyler;
 ;
+module.exports = exports['default'];
