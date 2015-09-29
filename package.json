@@ -1,6 +1,6 @@
 {
   "name": "checkbox-radio-styler",
-  "version": "1.0.0-beta.1",
+  "version": "1.0.0-beta.2",
   "description": "commonjs / es6 checkbox/radio styling module",
   "main": "dist/checkbox-radio-styler.js",
   "directories": {

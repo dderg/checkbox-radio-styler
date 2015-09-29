@@ -50,7 +50,7 @@ var CheckboxRadioStyler = (function () {
         _classCallCheck(this, CheckboxRadioStyler);
 
         this.selector = selector;
-        this.elems = new WeakSet();
+        this.elems = new Set();
     }
 
     _createClass(CheckboxRadioStyler, [{
