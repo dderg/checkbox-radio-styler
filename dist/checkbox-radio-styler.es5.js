@@ -30,7 +30,9 @@ var ElementStyler = (function () {
             this.label.className = 'js-styled js-styled_type_' + this.element.getAttribute('type');
             insertBefore(this.label, this.element);
             this.label.appendChild(this.element);
-            this.label.appendChild(document.createElement('span'));
+            var span = document.createElement('span');
+            span.className = 'js-styled__div';
+            this.label.appendChild(span);
         }
     }, {
         key: 'destroy',
