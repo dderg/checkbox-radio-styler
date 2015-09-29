@@ -10,6 +10,18 @@
 
 use [browserify](http://browserify.org/) with [babelify extension](https://github.com/babel/babelify) or [gulp version](https://github.com/deepak1556/gulp-browserify)
 
+## Installation
+
+### npm
+```bash
+npm install checkbox-radio-styler --save
+```
+
+### bower
+```bash
+bower install checkbox-radio-styler --save
+```
+
 ## Usage
 
 include `checkbox-radio-styler.js` and `checkbox-radio-styler.css`
