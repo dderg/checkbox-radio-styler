@@ -1,0 +1,28 @@
+{
+  "name": "checkbox-radio-styler",
+  "version": "0.0.0",
+  "homepage": "https://github.com/prog666/checkbox-radio-styler",
+  "authors": [
+    "Danila Dergachev <gnomdan@yandex.ru>"
+  ],
+  "description": "es6/commonjs checkbox/radio styling module",
+  "main": "dist/checkbox-radio-styler.js",
+  "keywords": [
+    "checkbox",
+    "radio",
+    "styler",
+    "javascript",
+    "commonjs",
+    "nojquery"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests",
+    "src",
+    "examples"
+  ]
+}
